@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+        <title>reveal.js</title>
+
+        <link rel="stylesheet" href="dist/reset.css" />
+        <link rel="stylesheet" href="dist/reveal.css" />
+        <link rel="stylesheet" href="dist/theme/tokyo-night.css" />
+
+        <!-- Theme used for syntax highlighted code -->
+        <link rel="stylesheet" href="plugin/highlight/tokyo-night.css" />
+        <link rel="stylesheet" href="plugin/chalkboard/style.css" />
+        <link rel="stylesheet" href="plugin/customcontrols/style.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+    <body>
+        <div class="reveal">
+			<div class="slides">
+				<section>
+					<h2>Фрикеры и Blue Box</h2>
+					<img src="images/46DF739300000578-0-image-a-2_1512129884639.jpg" alt="Изображение 1" />
+					<p>Фрикеры использовали телефонные сети для взлома и получения бесплатных звонков.</p>
+				</section>
+				  
+				<section>
+					<section>
+						<h2>История фрикинга</h2>
+						<img src="images/659x565_1_27ab4c9bedc57a303f96aab643444fb1@659x565_0xac120005_9.jpg" alt="Изображение 2" style="width: 50%;" />
+						<p>Фрикеры изобретали различные устройства, чтобы манипулировать телефонными системами.</p>
+					</section>
+					
+					<section>
+					  <h2>Blue Box</h2>
+					  <img src="images/Blue_Box_at_the_Powerhouse_Museum.jpg" alt="Blue Box" />
+					  <p>Blue Box — устройство, созданное для генерации частот, позволяющих получать бесплатные звонки.</p>
+					</section>
+				</section>
+				  
+				  
+				  <section>
+					<h2>Стив Джобс и Стив Возняк</h2>
+					<img src="images/i (1).jpeg" alt="Стив Джобс и Стив Возняк" />
+					<p>Молодые Стив Джобс и Стив Возняк начали с создания Blue Box, что стало основой для Apple.</p>
+				  </section>
+				  
+				  <section>
+					<h2>Джойбаблз</h2>
+					
+					<img src="images/i.jpeg" alt="Джойбаблз" style="width: 30%;" />
+					<p>Джойбаблз стал символом фрикинга, обучая других использовать телефонные сети.</p>
+				
+					</section>
+				  
+				  <section>
+					<h2>Случаи фрикинга</h2>
+					<img src="images/maxresdefault.jpg" alt="Фрикинг" style="width: 70%;"/>
+					<p>Одним из известных случаев стал звонок фрикеров в Белый Дом, показывающий уязвимость системы.</p>
+				  </section>
+				  
+				  <section>
+					<h2>Фрикеры в СССР</h2>
+					<img src="images/mincifry_sobiraetsya_vernut_v_rossiyu_it_specialistov_1668245707242150902.jpg" alt="Фрикеры в СССР" style="width: 60%;"/>
+					<p>В СССР фрикеры использовали аппаратуру подмены абонентского номера для обхода системы.</p>
+				  </section>
+				  
+				  <section>
+					<h2>Аппарат Blue Box</h2>
+					<img src="images/xpuspyzkkf6cx0mt0cihtvvox5q.jpeg" alt="Blue Box в работе" />
+					<p>Blue Box использовал частоты, такие как 2600 Гц, для манипуляции телефонными системами.</p>
+				  </section>
+				  
+				  <section>
+					<h2>Технологии фрикинга</h2>
+					<img src="images/YQh22SLgtuA.jpg" alt="Технологии фрикинга" />
+					<p>Фрикеры использовали различные технологии, включая программы для компьютера, чтобы обманывать телефонные сети.</p>
+				  </section>				  
+			</div>
+		</div>
+
+        <script src="dist/reveal.js"></script>
+        <script src="plugin/notes/notes.js"></script>
+        <script src="plugin/markdown/markdown.js"></script>
+        <script src="plugin/highlight/highlight.js"></script>
+        <script src="plugin/qrcode/qrcode.js"></script>
+        <script src="plugin/mermaid/mermaid.js"></script>
+        <script src="plugin/chalkboard/plugin.js"></script>
+        <script src="plugin/customcontrols/plugin.js"></script>
+
+        <script>
+            tailwind.config = {
+                corePlugins: {
+                    preflight: false,
+                },
+            }
+        </script>
+        <script>
+            // More info about initialization & config:
+            // - https://revealjs.com/initialization/
+            // - https://revealjs.com/config/
+
+            const colors = {
+                blue0: 'rgb(61, 89, 161)',
+                blue: 'rgb(122, 162, 247)',
+                cyan: 'rgb(125, 207, 255)',
+                magenta: 'rgb(187, 154, 247)',
+                orange: 'rgb(255, 158, 100)',
+                yellow: 'rgb(224, 175, 104)',
+                green: 'rgb(158, 206, 106)',
+                teal: 'rgb(26, 188, 156)',
+                red: 'rgb(255, 117, 127)',
+                red1: 'rgb(219, 75, 75)',
+                fg: 'rgb(192, 202, 245)',
+                bg: 'rgb(26, 27, 38)',
+                transparent: '#00000000',
+            }
+
+            Reveal.initialize({
+                hash: true,
+                // Learn about plugins: https://revealjs.com/plugins/
+                plugins: [
+                    RevealMarkdown,
+                    RevealHighlight,
+                    RevealNotes,
+                    RevealMermaid,
+                    RevealChalkboard,
+                    RevealCustomControls,
+                ],
+                slideNumber: true,
+                customcontrols: {
+                    controls: [
+                        {
+                            icon: '<div></div>',
+                            title: 'Clear canvas (DEL)',
+                            action: 'RevealChalkboard.clear();',
+                        },
+                        {
+                            icon: '<div></div>',
+                            title: 'Toggle chalkboard (B)',
+                            action: 'RevealChalkboard.toggleChalkboard();',
+                        },
+                        {
+                            icon: '<div></div>',
+                            title: 'Toggle notes canvas (C)',
+                            action: 'RevealChalkboard.toggleNotesCanvas();',
+                        },
+                    ],
+                },
+                chalkboard: {
+                    boardmarkerWidth: 5,
+                    boardmarkers: [
+                        {
+                            color: colors.bg,
+                            cursor:
+                                'url(' +
+                                path +
+                                'img/boardmarker-black.png), auto',
+                        },
+                        {
+                            color: colors.fg,
+                            cursor:
+                                'url(' +
+                                path +
+                                'img/boardmarker-black.png), auto',
+                        },
+                        {
+                            color: colors.blue,
+                            cursor:
+                                'url(' +
+                                path +
+                                'img/boardmarker-black.png), auto',
+                        },
+                        {
+                            color: colors.red,
+                            cursor:
+                                'url(' +
+                                path +
+                                'img/boardmarker-black.png), auto',
+                        },
+                        {
+                            color: colors.green,
+                            cursor:
+                                'url(' +
+                                path +
+                                'img/boardmarker-black.png), auto',
+                        },
+                        {
+                            color: colors.yellow,
+                            cursor:
+                                'url(' +
+                                path +
+                                'img/boardmarker-black.png), auto',
+                        },
+                        {
+                            color: colors.teal,
+                            cursor:
+                                'url(' +
+                                path +
+                                'img/boardmarker-black.png), auto',
+                        },
+                        {
+                            color: colors.orange,
+                            cursor:
+                                'url(' +
+                                path +
+                                'img/boardmarker-black.png), auto',
+                        },
+                    ],
+                    chalks: [
+                        {
+                            color: colors.bg,
+                            cursor:
+                                'url(' + path + 'img/chalk-white.png), auto',
+                        },
+                        {
+                            color: colors.fg,
+                            cursor:
+                                'url(' + path + 'img/chalk-white.png), auto',
+                        },
+                        {
+                            color: colors.blue,
+                            cursor:
+                                'url(' + path + 'img/chalk-white.png), auto',
+                        },
+                        {
+                            color: colors.red,
+                            cursor:
+                                'url(' + path + 'img/chalk-white.png), auto',
+                        },
+                        {
+                            color: colors.green,
+                            cursor:
+                                'url(' + path + 'img/chalk-white.png), auto',
+                        },
+                        {
+                            color: colors.yellow,
+                            cursor:
+                                'url(' + path + 'img/chalk-white.png), auto',
+                        },
+                        {
+                            color: colors.teal,
+                            cursor:
+                                'url(' + path + 'img/chalk-white.png), auto',
+                        },
+                        {
+                            color: colors.orange,
+                            cursor:
+                                'url(' + path + 'img/chalk-white.png), auto',
+                        },
+                    ],
+                },
+                mermaid: {
+                    securityLevel: 'loose',
+                    theme: 'dark',
+                    themeVariables: {
+                        darkMode: true,
+                        textColor: colors.fg,
+                        background: colors.bg,
+                        mainBkg: colors.bg,
+                        lineColor: colors.fg,
+                    },
+                },
+            })
+        </script>
+    </body>
+</html>
